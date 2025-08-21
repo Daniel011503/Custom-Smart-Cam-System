@@ -164,6 +164,8 @@ config.py
 logs/
 snapshots/
 models/
+data/
+training_data/
 *.yml
 *.txt
 notification_config.json

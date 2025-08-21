@@ -43,7 +43,7 @@ Smart-Camera-System/
 ├── models/                     # Trained models (created after training)
 ├── logs/                       # Data logs (created during operation)
 ├── snapshots/                  # Security images (created during operation)
-└── training_data/              # Face training images
+└── training_data/              # Create this folder and add face training images
     └── person_name/            # Create folders for each person
         ├── image1.jpg
         ├── image2.jpg
@@ -112,8 +112,9 @@ Arduino Uno:
 ### 1. Prepare Training Data
 ```bash
 # Create training folders
-mkdir -p training_data/your_name
+mkdir -p training_data/person_name
 # Add 10-20 photos of each person to their folder
+# Example: training_data/john/photo1.jpg, training_data/jane/photo1.jpg, etc.
 ```
 
 ### 2. Train the Model
